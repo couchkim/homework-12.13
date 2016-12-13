@@ -9,14 +9,22 @@ button{
     margin:10px 0;
 }
 
-section{
+body{
     margin-top: 20px;
 }
 
-.image{
-    display:inline-block;
+ul{
+    list-style-type: none;
+    
+}
+li{
+    margin:10px;
+    background-color:lightgray;
 }
 
-.info{
+img{
+    display:inline-block;
+}
+div{
     display:inline-block;
 }
