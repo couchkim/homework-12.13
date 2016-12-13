@@ -1,0 +1,22 @@
+header{
+    background-color: gray;
+    padding:20px 0;
+    margin-bottom: 20px;
+}
+
+button{
+    padding:10px;
+    margin:10px 0;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.image{
+    display:inline-block;
+}
+
+.info{
+    display:inline-block;
+}
