@@ -12,20 +12,21 @@ let button1 = document.querySelector('#new');
         button3.addEventListener('click', function(){
         console.log("Thumbs Up Guy" + " has been noped!");
         })
-
-
 }
 
 function addProfile(){
    
    
     let parent= document.createElement('li');
+    let divParent= document.createElement('div');
    
     let pic = document.createElement('img');
     pic.src = "https://randomuser.me/api/portraits/men/3.jpg";
     let name = document.createElement('h2');
     name.textContent = "Thumbs Up Guy";
-    let like = document.createElement('button');
+    
+    // let like = document.querySelector('#like');
+    like = document.createElement('button');
     like.textContent = "Like";
     like.addEventListener('click', function(){
         console.log("Likes " + "Thumbs Up Guy");
@@ -36,10 +37,13 @@ function addProfile(){
         console.log("Thumbs Up Guy" + " has been noped!");
     })
  
+
     parent.appendChild(pic);
-    parent.appendChild(name);
-    parent.appendChild(like);
-    parent.appendChild(nope);
+    divParent.appendChild(name);
+    divParent.appendChild(like);
+    divParent.appendChild(nope);
+
+    parent.appendChild(divParent);
     
 
     let grandparent = document.querySelector('#list');
