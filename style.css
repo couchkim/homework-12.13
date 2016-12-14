@@ -28,3 +28,7 @@ img{
 div{
     display:inline-block;
 }
+
+.faded{
+    opacity: .3;
+}

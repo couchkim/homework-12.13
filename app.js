@@ -30,11 +30,13 @@ function addProfile(){
     like.textContent = "Like";
     like.addEventListener('click', function(){
         console.log("Likes " + "Thumbs Up Guy");
+        like.classList.add('faded');
     })
     let nope = document.createElement('button');
     nope.textContent = "Nope";
     nope.addEventListener('click', function(){
         console.log("Thumbs Up Guy" + " has been noped!");
+        nope.classList.add('faded');
     })
  
 
@@ -50,6 +52,7 @@ function addProfile(){
     grandparent.appendChild(parent);
     
 }
+
 
 
 window.addEventListener('load', init);
